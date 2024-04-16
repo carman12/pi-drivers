@@ -1,0 +1,52 @@
+.containerLanding {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+   /* background-image: url('../../assets/landingp.png');*/
+   /*background-image: url(../src/assets/corredor2.png);*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Rethink Sans', sans-serif;
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.container-words {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 600px;
+    height: 100px;
+    border-radius: 30px;
+    margin: 20px;
+    padding: 10px;
+}
+
+
+#hero{
+    min-height: 100vh;
+    position: relative;
+  }
+  video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top:  0; left: 0;
+    position: absolute;
+  
+  }
+  
+  .capa{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left:  0;
+    width:  100%;
+    height:  100%;
+    background: #1c1c1c1d;
+    opacity: 1.5;
+    mix-blend-mode: overlay;
+  }

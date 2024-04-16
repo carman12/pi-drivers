@@ -1,0 +1,129 @@
+.search {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .inputbox {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    
+  }
+  
+  .inputbox input {
+    padding: 20px 10px 10px;
+    background: #fff;
+    outline: none;
+    box-shadow: #e52441;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+    gap: 20px;
+    border: none;
+  }
+  
+  .inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    font-size: 1em;
+    color: #8f8f8f;
+    letter-spacing: 00.05em;
+    transition: 0.5s;
+    pointer-events: none;
+  }
+  
+  .inputbox input:valid ~span,
+  .inputbox input:focus ~span {
+    transform: translateX(-10px) translateY(-34px);
+    font-size: 0,75em;
+  }
+  
+  .inputbox i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+  }
+  
+  .inputbox input:valid ~i,
+  .inputbox input:focus ~i {
+    height: 44px;
+  }
+
+
+  
+  .lable {
+    line-height: 24px;
+    font-size: 15px;
+    color: #fff;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+  }
+
+  .button1 {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff0303;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+
+  @keyframes flickering {
+    0% {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    52% {
+      opacity: 1;
+    }
+  
+    54% {
+      opacity: 0;
+    }
+  
+    56% {
+      opacity: 1;
+    }
+  
+    90% {
+      opacity: 1;
+    }
+  
+    92% {
+      opacity: 0;
+    }
+  
+    94% {
+      opacity: 1;
+    }
+  
+    96% {
+      opacity: 0;
+    }
+  
+    98% {
+      opacity: 1;
+    }
+  
+    99% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
